@@ -3,224 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haydn Watkins - Multimedium Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Haydn Watkins - Multimedium Designer & Developer</title>
+    <meta name="description" content="Portfolio of Haydn Watkins, a seasoned multimedium designer with expertise in graphic design, web development, and brand strategy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#client-access">Client Access</a></li>
-        </ul>
-    </nav>
-
-    <section id="hero">
-        <div class="parallax">
-            <div class="parallax-bg"></div>
-        </div>
+    <header class="site-header" role="banner">
         <div class="container">
-            <img src="assets/images/profile-picture.jpg" alt="Haydn Watkins" class="profile-picture">
-            <h1>Haydn Watkins</h1>
-            <h2>Multimedium Designer</h2>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <nav class="main-nav" role="navigation">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#client-access" class="nav-link">Client Access</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I'm a seasoned graphic and web designer with nearly two decades of experience in crafting impactful visual solutions. Passionate about brand development, I excel at creating strong brand identities and delivering exceptional results under tight deadlines. My expertise spans social media management and marketing, as well as ecommerce development and management.</p>
-        </div>
-    </section>
-
-    <section id="skills">
-        <div class="container">
-            <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">Graphic Design</div>
-                <div class="skill-item">Web Design</div>
-                <div class="skill-item">Brand Development</div>
-                <div class="skill-item">UI/UX Design</div>
-                <div class="skill-item">Photography</div>
-                <div class="skill-item">Digital Marketing</div>
+    <main role="main">
+        <section id="hero" class="hero">
+            <div class="parallax-container">
+                <div class="parallax-bg"></div>
             </div>
-        </div>
-    </section>
-
-<section id="portfolio">
-    <div class="container">
-        <h2>My Portfolio</h2>
-
-        <div class="portfolio-category">
-            <h3>Web Design</h3>
-            <div class="website-grid">
-                <div class="website-item">
-                    <img src="assets/images/portfolio/three-penn.png" alt="Three Penn Properties - Full Website">
-                    <h4>Three Penn Properties</h4>
-                    <p>Full Website</p>
-                    <a href="https://threepenn.com" target="_blank">View Project</a>
-                </div>
-                <div class="website-item">
-                    <img src="assets/images/portfolio/Eastern-Seal.png" alt="Eastern Seal - Sample Landing Page">
-                    <h4>Eastern Seal</h4>
-                    <p>Sample Landing Page</p>
-                    <a href="#" target="_blank">View Project</a>
-                </div>
-                <div class="website-item">
-                    <img src="assets/images/portfolio/Blissfull-Existence-Healing-Acres.png" alt="Blissful Existence Healing Acres - Sample Design for Client">
-                    <h4>Blissful Existence Healing Acres</h4>
-                    <p>Sample Design for Client</p>
-                    <a href="https://haydnphilipdesign.github.io/blissfulexistence/" target="_blank">View Project</a>
-                </div>
-                <div class="website-item">
-                    <img src="assets/images/portfolio/Fairbridge.png" alt="Fairbridge Inn & Suites - Sample Landing Page">
-                    <h4>Fairbridge Inn & Suites</h4>
-                    <p>Sample Landing Page</p>
-                    <a href="https://haydnphilipdesign.github.io/Fairbridge/" target="_blank">View Project</a>
-                </div>
+            <div class="container">
+                <img src="assets/images/profile-picture.jpg" alt="Haydn Watkins" class="profile-picture" width="200" height="200">
+                <h1 class="hero-title">Haydn Watkins</h1>
+                <p class="hero-subtitle">Multimedium Designer & Developer</p>
+                <a href="#contact" class="cta-button">Get In Touch</a>
             </div>
-        </div>
+        </section>
 
-        <div class="portfolio-category">
-            <h3>Photography</h3>
-            <div class="photo-masonry">
-                <div class="photo-item"><img src="assets/images/portfolio/photo1.jpg" alt="Photography 1"></div>
-                <div class="photo-item"><img src="assets/images/portfolio/photo2.jpg" alt="Photography 2"></div>
-                <div class="photo-item"><img src="assets/images/portfolio/photo3.jpg" alt="Photography 3"></div>
-                <div class="photo-item"><img src="assets/images/portfolio/photo4.jpg" alt="Photography 4"></div>
-                <div class="photo-item"><img src="assets/images/portfolio/photo5.jpg" alt="Photography 5"></div>
-                <div class="photo-item"><img src="assets/images/portfolio/photo6.jpg" alt="Photography 6"></div>
-                <div class="photo-item"><img src="assets/images/portfolio/photo7.jpg" alt="Photography 7"></div>
-                <div class="photo-item"><img src="assets/images/portfolio/photo8.jpg" alt="Photography 8"></div>
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">With nearly two decades of experience, I've honed my skills as a versatile graphic and web designer. My passion lies in crafting impactful visual solutions and developing strong brand identities. I thrive under pressure, consistently delivering exceptional results even with tight deadlines. My expertise extends to social media management, digital marketing strategies, and e-commerce development, allowing me to offer comprehensive solutions to my clients.</p>
             </div>
-        </div>
-        
-        <div class="portfolio-category">
-            <h3>Graphic Design</h3>
-            <div class="graphic-masonry">
-                <!-- First 12 items shown initially -->
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic1.jpg" alt="Graphic Design Project 1" data-size="1417x500">
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <ul class="skills-grid">
+                    <li class="skill-item" data-skill="Graphic Design">Graphic Design</li>
+                    <li class="skill-item" data-skill="Web Design">Web Design</li>
+                    <li class="skill-item" data-skill="Brand Development">Brand Development</li>
+                    <li class="skill-item" data-skill="UI/UX Design">UI/UX Design</li>
+                    <li class="skill-item" data-skill="Photography">Photography</li>
+                    <li class="skill-item" data-skill="Digital Marketing">Digital Marketing</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title">My Portfolio</h2>
+                
+                <div class="portfolio-category">
+                    <h3 class="category-title">Web Design</h3>
+                    <div class="website-grid">
+                        <article class="website-item">
+                            <img src="assets/images/portfolio/three-penn.png" alt="Three Penn Properties Website" width="400" height="300">
+                            <h4 class="project-title">Three Penn Properties</h4>
+                            <p class="project-description">Full Website</p>
+                            <a href="https://threepenn.com" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+                        </article>
+                        <!-- Add more website items here -->
+                    </div>
                 </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic2.jpg" alt="Graphic Design Project 2" data-size="1417x500">
+                
+                <div class="portfolio-category">
+                    <h3 class="category-title">Photography</h3>
+                    <div class="photo-masonry" id="photo-masonry">
+                        <!-- Photo items will be dynamically added here -->
+                    </div>
                 </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic3.jpg" alt="Graphic Design Project 3" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic4.jpg" alt="Graphic Design Project 4" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic5.jpg" alt="Graphic Design Project 5" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic6.jpg" alt="Graphic Design Project 6" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic7.jpg" alt="Graphic Design Project 7" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic8.jpg" alt="Graphic Design Project 8" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic9.jpg" alt="Graphic Design Project 9" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic10.jpg" alt="Graphic Design Project 10" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic11.jpg" alt="Graphic Design Project 11" data-size="1417x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic12.jpg" alt="Graphic Design Project 12" data-size="597x500">
+                
+                <div class="portfolio-category">
+                    <h3 class="category-title">Graphic Design</h3>
+                    <div class="graphic-masonry" id="graphic-masonry">
+                        <!-- Graphic design items will be dynamically added here -->
+                    </div>
+                    <button id="load-more-graphics" class="load-more-btn">View More</button>
                 </div>
             </div>
-            <button id="load-more-graphics" class="load-more-btn">View More</button>
-            <div id="additional-graphics" class="graphic-masonry" style="display: none;">
-                <!-- Additional items (13-22) -->
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic13.jpg" alt="Graphic Design Project 13" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic14.jpg" alt="Graphic Design Project 14" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic15.jpg" alt="Graphic Design Project 15" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic16.jpg" alt="Graphic Design Project 16" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic17.jpg" alt="Graphic Design Project 17" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic18.jpg" alt="Graphic Design Project 18" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic19.jpg" alt="Graphic Design Project 19" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic20.jpg" alt="Graphic Design Project 20" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic21.jpg" alt="Graphic Design Project 21" data-size="572x500">
-                </div>
-                <div class="photo-item">
-                    <img src="assets/images/portfolio/graphic22.jpg" alt="Graphic Design Project 22" data-size="353x500">
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Me</h2>
+                <form id="contact-form" class="contact-form">
+                    <label for="name" class="sr-only">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email" class="sr-only">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="message" class="sr-only">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="form-status" class="form-status" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section id="client-access" class="client-access">
+            <div class="container">
+                <h2 class="section-title">Client Access</h2>
+                <form id="password-form" class="password-form">
+                    <label for="password-input" class="sr-only">Enter password</label>
+                    <input type="password" id="password-input" placeholder="Enter password" required>
+                    <button type="button" id="submit-password" class="submit-btn">Submit</button>
+                </form>
+                <div class="client-content">
+                    <h3>Welcome, Client!</h3>
+                    <p>Here is your exclusive content...</p>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-    
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div id="form-status"></div>
-    </div>
-</section>
-  
+        </section>
+    </main>
 
-    <section id="client-access">
-        <div class="container">
-            <h2>Client Access</h2>
-            <form id="password-form">
-                <input type="password" id="password-input" placeholder="Enter password">
-                <button type="button" id="submit-password">Submit</button>
-            </form>
-            <div class="client-content">
-                <h3>Welcome, Client!</h3>
-                <p>Here is your exclusive content...</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+    <footer class="site-footer" role="contentinfo">
         <div class="container">
             <p>&copy; 2024 Haydn Watkins. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="scripts.js"></script>
-    <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
-      emailjs.init('5BGgGJmMbHiTlHHmK')
+        emailjs.init('5BGgGJmMbHiTlHHmK');
     </script>
 </body>
 </html>
