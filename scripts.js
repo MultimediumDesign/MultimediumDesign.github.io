@@ -13,36 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Initialize Swiper
-    const swiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        slidesPerView: 1,
-        spaceBetween: 20,
-        breakpoints: {
-            640: {
-                slidesPerView: 2,
-            },
-            768: {
-                slidesPerView: 3,
-            },
-            1024: {
-                slidesPerView: 3,
-            },
-        }
-    });
-
     // Initialize GSAP for parallax effect
     gsap.registerPlugin(ScrollTrigger);
 
@@ -52,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             trigger: "#hero",
             start: "top top",
             end: "bottom top",
-            scrub: true
+            scrub: true,
+            markers: false // Remove markers in production
         }
     });
 
@@ -168,8 +139,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function loadPortfolioItems() {
-        const photographyGrid = document.querySelector('#photography .portfolio-grid');
-        const graphicDesignGrid = document.querySelector('#graphic-design .portfolio-grid');
+        const photographyGrid = document.querySelector('#photo-masonry');
+        const graphicDesignGrid = document.querySelector('#graphic-masonry');
 
         function createPortfolioItem(item) {
             const portfolioItem = document.createElement('div');
