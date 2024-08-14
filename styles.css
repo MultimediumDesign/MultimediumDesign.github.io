@@ -331,6 +331,33 @@ section {
     margin-top: 2rem;
 }
 
+/* Payment section */
+.payment {
+    text-align: center;
+}
+
+.payment-links {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.payment-links li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.payment-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.payment-links a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 .site-footer {
     background-color: var(--secondary-color);
