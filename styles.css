@@ -15,6 +15,7 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 .container {
@@ -191,85 +192,225 @@ section {
     cursor: pointer;
 }
 
-        .skill-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
 
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
+/* Portfolio section */
+.portfolio-category {
+    margin-bottom: 3rem;
+}
 
-        .portfolio-item {
-            background-color: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
+.website-grid, .photo-masonry, .graphic-masonry {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
 
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-        }
+.website-item, .photo-item, .graphic-item {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
 
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
+.website-item:hover, .photo-item:hover, .graphic-item:hover {
+    transform: translateY(-5px);
+}
 
-        .portfolio-item-content {
-            padding: 15px;
-        }
+.website-item img, .photo-item img, .graphic-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 
-        .portfolio-item h3 {
-            margin: 0 0 10px;
-            font-size: 1.2em;
-        }
+.website-item-content, .photo-item-content, .graphic-item-content {
+    padding: 15px;
+}
 
-        .portfolio-item p {
-            margin: 0;
-            font-size: 0.9em;
-            color: #666;
-        }
+.website-item h3, .photo-item h3, .graphic-item h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
 
-        @media (max-width: 768px) {
-            .portfolio-grid {
-                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            }
-        }
+.website-item p, .photo-item p, .graphic-item p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
 
-        /* Accessibility improvements */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            background: #000;
-            color: white;
-            padding: 8px;
-            z-index: 100;
-        }
+.load-more-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
 
-        .skip-link:focus {
-            top: 0;
-        }
+.load-more-btn:hover {
+    background-color: #e5584a;
+}
 
-        /* High contrast mode */
-        @media (prefers-contrast: high) {
-            body {
-                background-color: #000;
-                color: #fff;
-            }
+/* Contact section */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
 
-            a {
-                color: #ff0;
-            }
+.contact-form input, .contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-            .skill-item, .portfolio-item {
-                background-color: #333;
-                color: #fff;
-            }
-        }
+.contact-form button {
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.contact-form button:hover {
+    background-color: #e5584a;
+}
+
+.form-status {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* Client Access section */
+.password-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.password-form input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-form button {
+    align-self: flex-start;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.password-form button:hover {
+    background-color: #e5584a;
+}
+
+.client-content {
+    display: none;
+    margin-top: 2rem;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero {
+        padding: 8rem 0 4rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .skills-grid {
+        gap: 1rem;
+    }
+
+    .skill-item {
+        padding: 0.75rem 1rem;
+    }
+
+    .website-grid, .photo-masonry, .graphic-masonry {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .contact-form, .password-form {
+        max-width: 100%;
+    }
+}
+
+/* Accessibility improvements */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+
+    a {
+        color: #ff0;
+    }
+
+    .skill-item, .portfolio-item {
+        background-color: #333;
+        color: #fff;
+    }
+}
