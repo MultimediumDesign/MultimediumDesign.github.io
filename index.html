@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haydn Watkins - Multimedium Designer & Developer</title>
+    <title>Haydn Watkins - Web Designer & Developer</title>
     <meta name="description" content="Portfolio of Haydn Watkins, a seasoned multimedium designer with expertise in graphic design, web development, and brand strategy.">
+    <meta name="keywords" content="Haydn Watkins, Multimedium Design, Web Developer, Graphic Design, Brand Strategy">
+    <meta name="author" content="Haydn Watkins">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js" defer></script>
-    <script src="scripts.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
-    <script type="text/javascript">
-        window.emailjs.init('5BGgGJmMbHiTlHHmK');
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header class="site-header" role="banner">
@@ -38,9 +37,9 @@
                 <div class="parallax-bg"></div>
             </div>
             <div class="container">
-                <img src="assets/images/profile-picture.jpg" alt="Haydn Watkins" class="profile-picture" width="200" height="200">
+                <img src="assets/images/profile-picture.jpg" alt="Profile picture of Haydn Watkins" class="profile-picture" width="200" height="200">
                 <h1 class="hero-title">Haydn Watkins</h1>
-                <p class="hero-subtitle">Multimedium Designer & Developer</p>
+                <p class="hero-subtitle">Web Designer & Developer</p>
                 <a href="#contact" class="cta-button">Get In Touch</a>
             </div>
         </section>
@@ -74,7 +73,7 @@
                     <h3 class="category-title">Web Design</h3>
                     <div class="website-grid">
                         <article class="website-item">
-                            <img src="assets/images/portfolio/three-penn.png" alt="Three Penn Properties Website" width="400" height="300">
+                            <img src="assets/images/portfolio/three-penn.png" alt="Three Penn Properties Website" width="400" height="300" class="lazy" data-src="assets/images/portfolio/three-penn.png">
                             <h4 class="project-title">Three Penn Properties</h4>
                             <p class="project-description">Full Website</p>
                             <a href="https://threepenn.com" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
