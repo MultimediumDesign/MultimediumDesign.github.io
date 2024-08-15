@@ -175,10 +175,15 @@ section {
 /* Skills section */
 .skills-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 1.25rem;
     margin-top: 2rem;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
 }
 
 .skill-item {
